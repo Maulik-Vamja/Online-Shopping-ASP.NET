@@ -1,0 +1,136 @@
+﻿<%@ Master Language="VB" CodeFile="ClientMasterPage.master.vb" Inherits="Admin_AdminMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Royal Export</title>
+    <link rel="stylesheet" href="~/css/bootstrap.min.css"  type="text/css">
+	
+	<!-- Custom CSS -->
+    <link rel="stylesheet" href="~/css/style.css" type="text/css">
+	
+	
+	<!-- Custom Fonts -->
+    <link rel="stylesheet" href="~/font-awesome/css/font-awesome.min.css"  type="text/css">
+    <link rel="stylesheet" href="~/fonts/font-slider.css" type="text/css">
+	
+	<!-- jQuery and Modernizr-->
+	<script src="~/js/jquery-2.1.1.js" type="text/javascript"></script>
+	
+	<!-- Core JavaScript Files -->  	 
+    <script src="~/js/bootstrap.min.js" type="text/javascript"></script>
+	
+	
+</head>
+<body>
+    <form id="form1" runat="server">
+   <!--Top-->
+	<nav id="top">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					RoyalExport@gmail.com
+				</div>
+				<div class="col-xs-6">
+					<ul class="top-link">
+						<li><a href="Home.aspx"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+						<li><a href="login.aspx">Login\Register</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<!--Header-->
+	<header class="container ">
+		<div class="row">
+			<div class="col-md-4">
+				<div id="logo" class="navbar-brand font-weight-bold logo">Royal Export</div>
+			</div>
+			<div class="col-md-6 searchbox">
+                
+			    <asp:TextBox ID="txtsearch" runat="server" CssClass="form-search"></asp:TextBox>
+                <asp:Button ID="btnsearch" runat="server" Text="Search" CssClass="btn btn-2 "/>
+			</div>
+			<div class="col-md-2">
+                <a href ="Addtocart.aspx" ><asp:Button ID="btncart" runat="server" Text="Cart Items" CssClass="btn btncart "/></a>
+			</div>
+		</div>
+	</header>
+	<!--Navigation-->
+    <nav id="menu" class="navbar">
+		<div class="container">
+			<div class="navbar-header"><span id="heading" class="visible-xs">Categories</span>
+			  <button type="button" class="btn btn-navbar navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"><i class="fa fa-bars"></i></button>
+			</div>
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav">
+					<li><a href="Home.aspx" >Home</a></li>
+					<li><a href="#">Product</a></li>
+					<li><a href="about.aspx" >About Us</a></li>
+					<li><a href="feedback.aspx">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <!----------------------------------------------------------Navigation End ---------------------------------------------------------------->
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+    </asp:ContentPlaceHolder>
+    
+
+    <!----------------------------------------------------------Footer Start ---------------------------------------------------------------->
+    <footer>
+		<div class="container">
+			<div class="wrap-footer">
+				<div class="row">
+					<div class="col-md-3 col-footer footer-1">
+						<h4 class="logofooter">Royal Export </h4>
+						<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+					</div>
+					<div class="col-md-3 col-footer footer-2">
+						<div class="heading"><h4>Customer Service</h4></div>
+						<ul>
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Delivery Information</a></li>
+							<li><a href="#">Privacy Policy</a></li>
+							<li><a href="#">Terms & Conditions</a></li>
+							<li><a href="#">Contact Us</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-footer footer-3">
+						<div class="heading"><h4>My Account</h4></div>
+						<ul>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Brands</a></li>
+							<li><a href="#">Gift Vouchers</a></li>
+							<li><a href="#">Specials</a></li>
+							<li><a href="#">Site Map</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 col-footer footer-4">
+						<div class="heading"><h4>Contact Us</h4></div>
+						<ul>
+							<li><span class="glyphicon glyphicon-home"></span>Sutex Bank College, Amroli, Surat</li>
+							<li><span class="glyphicon glyphicon-earphone"></span>+91 7096490307</li>
+							<li><span class="glyphicon glyphicon-envelope"></span>RoyalExport@gmail.com</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						Copyright@Royal Export Designed by Nikunj Thesiya
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    </form>
+
+</body>
+</html>
